@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Doodle</title>
+  <style>
+    #mycanvas {
+      border: 10px solid #999;
+      cursor: crosshair;
+    }
+    .thumbnail {
+      border: 2px solid #999;
+      margin-right: 5px;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <p><select name="" id="penColor">
+    <option value="black">黒</option>
+    <option value="red">赤</option>
+    <option value="yellow">黄</option>
+    <option value="blue">青</option>
+  </select>
+  <select name="" id="penWidth">
+    <option value="1">細い</option>
+    <option value="3">普通</option>
+    <option value="5">太い</option>
+  </select>
+    <input type="button" value="消去" id="erase">
+    <input type="button" value="ギャラリーに追加" id="save">
+  </p>
+
+  <canvas id="mycanvas" width="400" height="200">
+    Canvasに対応したブラウザを用意しておきましょう。
+  </canvas>
+  <div id="gallery">
+
+  </div>
+  
+
+  <script src="canvasJs/app.js"></script>
+</body>
+</html>
